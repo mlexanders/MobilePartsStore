@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePartsStore.Api", "MobilePartsStore.Api\MobilePartsStore.Api.csproj", "{C616B292-5CB7-4D5D-825C-D35B74CB3535}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobilePartsStore.Api", "MobilePartsStore.Api\MobilePartsStore.Api.csproj", "{C616B292-5CB7-4D5D-825C-D35B74CB3535}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileParts.Common", "MobilePartsCommon\MobileParts.Common.csproj", "{49E2C6E0-864A-4321-B718-E0B1CB351894}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobileParts.Common", "MobilePartsCommon\MobileParts.Common.csproj", "{49E2C6E0-864A-4321-B718-E0B1CB351894}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD.Actions", "CRUD.Actions\CRUD.Actions\CRUD.Actions.csproj", "{80395E98-9181-43F1-B388-E6395600DD14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{49E2C6E0-864A-4321-B718-E0B1CB351894}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49E2C6E0-864A-4321-B718-E0B1CB351894}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49E2C6E0-864A-4321-B718-E0B1CB351894}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80395E98-9181-43F1-B388-E6395600DD14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80395E98-9181-43F1-B388-E6395600DD14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80395E98-9181-43F1-B388-E6395600DD14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80395E98-9181-43F1-B388-E6395600DD14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -17,10 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\CRUD.Actions\CRUD.Actions\CRUD.Actions.csproj" />
     <ProjectReference Include="..\MobilePartsCommon\MobileParts.Common.csproj" />
   </ItemGroup>
 

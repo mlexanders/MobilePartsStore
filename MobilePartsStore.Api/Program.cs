@@ -1,4 +1,7 @@
+using CRUD.Actions.Implementation;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MobileParts.Common.Models;
 using MobilePartsStore.Api;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +16,8 @@ builder.Services.AddDbContext<AppDbContext>(o =>
 {
     o.UseSqlServer(builder.Configuration.GetConnectionString("MobilePartsDb"));
 });
+
+builder.Services.AddTransient(b => new BaseCrudRepository<Category, int>(b.GetRequiredService<AppDbContext>()));
 
 var app = builder.Build();
 
