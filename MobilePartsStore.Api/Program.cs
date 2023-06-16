@@ -18,6 +18,8 @@ builder.Services.AddDbContext<AppDbContext>(o =>
 });
 
 builder.Services.AddTransient(b => new BaseCrudRepository<Category, int>(b.GetRequiredService<AppDbContext>()));
+builder.Services.AddTransient(b => new BaseCrudRepository<Product, Guid>(b.GetRequiredService<AppDbContext>()));
+builder.Services.AddTransient(b => new BaseCrudRepository<Vendor, int>(b.GetRequiredService<AppDbContext>()));
 
 var app = builder.Build();
 
