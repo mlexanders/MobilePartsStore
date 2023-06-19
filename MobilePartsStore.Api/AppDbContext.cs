@@ -17,6 +17,7 @@ namespace MobilePartsStore.Api
         {
             modelBuilder.Entity<Product>().
                 Property(p => p.Cost).HasColumnType("Money");
+            modelBuilder.Entity<Category>().Property(p => p.Id).UseIdentityColumn();
         }
     }
 }

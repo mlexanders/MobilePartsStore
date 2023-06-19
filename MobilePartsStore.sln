@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MobileParts.Common", "Mobil
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD.Actions", "CRUD.Actions\CRUD.Actions\CRUD.Actions.csproj", "{80395E98-9181-43F1-B388-E6395600DD14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePartsStore.Auth.Api", "MobilePartsStore.Auth.Api\MobilePartsStore.Auth.Api.csproj", "{5A586147-6DB3-4744-A0B4-FC255FF82F09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{80395E98-9181-43F1-B388-E6395600DD14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80395E98-9181-43F1-B388-E6395600DD14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80395E98-9181-43F1-B388-E6395600DD14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A586147-6DB3-4744-A0B4-FC255FF82F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A586147-6DB3-4744-A0B4-FC255FF82F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A586147-6DB3-4744-A0B4-FC255FF82F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A586147-6DB3-4744-A0B4-FC255FF82F09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

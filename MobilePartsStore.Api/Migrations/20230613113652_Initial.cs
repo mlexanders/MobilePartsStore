@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -47,7 +46,7 @@ namespace MobilePartsStore.Api.Migrations
                     VendorId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
-                {   
+                {
                     table.PrimaryKey("PK_Products", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Products_Categories_CategoryId",
