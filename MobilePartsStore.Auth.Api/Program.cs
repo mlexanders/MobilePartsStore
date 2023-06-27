@@ -1,4 +1,6 @@
+using CRUD.Actions.Implementation;
 using Microsoft.EntityFrameworkCore;
+using MobileParts.Common.Models;
 using MobilePartsStore.Auth.Api;
 using MobilePartsStore.Auth.Api.Repository;
 
@@ -15,7 +17,8 @@ builder.Services.AddDbContext<AuthDbContext>(o =>
     o.UseSqlServer(builder.Configuration.GetConnectionString("MobilePartsAuthDb"));
 });
 
-builder.Services.AddTransient(b => new AccountRepository(b.GetRequiredService<AuthDbContext>()));
+//builder.Services.AddTransient(s => new BaseCrudRepository<Account, Guid>(s.GetRequiredService<AuthDbContext>())); 
+builder.Services.AddTransient(s => new AccountRepository(s.GetRequiredService<AuthDbContext>()));
 
 var app = builder.Build();
 
